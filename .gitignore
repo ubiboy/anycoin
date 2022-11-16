@@ -89,3 +89,7 @@ __pycache__
 
 .Python
 .DS_Store
+
+/db_backup.sqlite3
+
+media/
