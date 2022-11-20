@@ -1,49 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-         <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DXZ7BQGV3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-9DXZ7BQGV3');
-    </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>welcome to Anycoin.com</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
+    {% include 'head.html' %}
+
   <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'home' %}">Crypto  & Blockchain News </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'prices' %}">Lookup Prices</a>
-        </li>
-
-      </ul>
-      <form class="d-flex" role="search" method="POST" action="{% url 'prices' %}">
-        {% csrf_token %}
-        <input class="form-control me-2" type="search" placeholder="Lookup Crypto" aria-label="Search" name="quote">
-        <button class="btn btn-outline-secondary" type="submit">Find</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    {% include 'header.html' %}
 
   <br/>
   <div class="container">
     {% block content %}
     {% endblock %}
+
+    <hr>
+
+    {% include 'footer.html' %}
+
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>

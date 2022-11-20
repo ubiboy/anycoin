@@ -1,0 +1,44 @@
+* {
+    margin:0 auto;
+    padding:0;
+}
+
+.any_header {
+    width: 100%
+    text-align: center;
+}
+
+#main {
+    width:100%;
+    overflow: hidden;
+    margin: 10px auto;
+
+}
+#main section{
+    width: 70%;
+    height
+    overflow: hidden;
+    float: left;
+}
+
+aside {
+    width: 28%;
+    float: right;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box
+}
+
+.md_footer {
+    text-align:center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 10px;}
+   .card {width: 7rem; margin-top:1rem;
+    }
+
+}
