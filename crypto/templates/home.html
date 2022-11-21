@@ -34,9 +34,9 @@
 
     <div class="container">
       <div class="row">
-        {% for x in api.Data|slice:":18" %}
+        {% for x in api.Data|slice:":12" %}
           <div class="col-sm">
-            <div class="card" style="width: 18rem; margin-top:2rem;">
+            <div class="card">
                 <img src="{{ x.imageurl }}" class="card-img-top" alt="{{ x.source }}">
                 <div class="card-body">
                   <h5 class="card-title">{{ x.title }}</h5>
@@ -51,7 +51,7 @@
     </div>
   </section>
   <aside>
-    <h2>Rt aside</h2>
+
   </aside>
 </div>
 
