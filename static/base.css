@@ -2,65 +2,191 @@
     margin:0 auto;
     padding:0;
 }
-html, body {
-    width: 100%
+.any_logo {
+    font-family: 'Reem Kufi', sans-serif;
+}
+body {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.any_header {
-    width: 100%
+.any_header h1 {
     text-align: center;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width:100%;
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+.main-nav__item input {
+    width: 10rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.main-nav__item button {
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 #main {
     width:100%;
     overflow: hidden;
     margin: 10px auto;
-
 }
+
 #main section{
-    width: 70%;
+    width: 100%;
     height
     overflow: hidden;
     float: left;
 }
 
-aside {
-    width: 28%;
-    float: right;
-    overflow: hidden;
-    padding: 20px;
-    box-sizing: border-box
+#main section .main_int {
+    text-align: left;
 }
 
-.md_footer {
-    text-align:center;
-    margin-top: 2rem;
+.main_int h1{
+    font-size: 2.5rem;
+    color: #0e4f1f;
+}
+
+.main_int p {
+    font-size: 1.3rem;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .card {
-    width: 14.5rem; margin-top:2rem;
+    width: 35%;
+    margin: 5%;
+    display: inline-block;
+    vertical-align: top;
 }
-
 
 @media screen and (max-width:500px) {
     html {
-        font-size: 10px;}
-   .card {
-        width: 100%; margin:0 auto;
-   }
-   .card-title {
-        font-size: 12px;
-        font-weight: bold;
-   }
-   .display-4 {
-        font-size: 13px;
-        font-weight: bold;
-   }
-     .navbar-brand {
-        text-align: left;
+        font-size: 10px;
+        width: 100%;
+        margin: 0 auto;
     }
-    .lead {
-        font-size: 11px;
+    .any_header h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1.5rem;
     }
 
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width:100%;
+        vertical-align: middle;
+    }
+
+    .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .main-nav__item {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    .main-nav__item input {
+        width: 5rem;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+
+    .main-nav__item button {
+        width: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    #main {
+        width:100%;
+        overflow: hidden;
+        margin: 5px auto;
+    }
+
+    #main section{
+        width: 100%;
+        height
+        overflow: hidden;
+        float: left;
+    }
+
+    #main section .main_int {
+        text-align: left;
+    }
+
+    .main_int h1{
+        font-size: 1.25rem;
+        color: #0e4f1f;
+    }
+
+    .main_int p {
+        font-size: 0.65rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card {
+        width: 39%;
+        margin: 3%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .any_footer {
+        text-align:center;
+        margin-top: 1rem;
+        }
+
+    .any_footer_button {
+        font-size: .45rem;
+    }
 }
+
+.any_footer {
+    text-align:center;
+    margin-top: 2rem;
+
+.any_footer_button {
+    font-size: .9rem;
+}
+
