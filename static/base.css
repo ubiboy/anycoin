@@ -178,14 +178,15 @@ a {
         }
 
     .any_footer_button {
-        font-size: .45rem;
+        font-size: .9rem;
+        margin-bottom: 1rem;
     }
 
 
 }
 .any_footer {
     text-align:center;
-    margin-top: 2rem;
+    margin: 2rem auto;
 
 .any_footer_button {
     font-size: .9rem;
