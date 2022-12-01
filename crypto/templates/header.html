@@ -10,17 +10,15 @@
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
-                    <a href="{% url 'prices' %}">Crypto Prices</a>
-                </li>
-                <li class="main-nav__item">
                    <form method="POST" action="{% url 'prices' %}">
                         {% csrf_token %}
-                        <input type="search" placeholder=" Lookup Crypto" name="quote">
-                        <button type="submit">Find</button>
+                        <input type="search" placeholder=" BTC, ETH etc" name="quote">
+                        <button type="submit" class="button">Find</button>
                     </form>
                 </li>
             </ul>
         </nav>
+      <hr>
 
 </div>
 
