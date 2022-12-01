@@ -6,9 +6,9 @@
 
 .any_header {
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .any_logo {
     font-family: 'Reem Kufi', sans-serif;
@@ -85,7 +85,6 @@ a {
 
 #main section{
     width: 100%;
-    height
     overflow: hidden;
     float: left;
 }
